@@ -621,7 +621,7 @@ transition: all 0.5s;
 
 
 /* additional media query---------------------- */
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 960px) {
     .hero {
         padding: 25px;
     }
