@@ -129,17 +129,17 @@ width: 17px;
 margin-top: 3px;
 }
 
-/* modify header to be more compact + blur transparent and stick to the page */
-/* header {
-    position: fixed;
+/* modify header to be more compact and stick to the page */
+header {
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255);
+    /* backdrop-filter: blur(5px); */
     padding: 10px 20px;    
-} */
+}
 
 /* -------------logo------------ */
 .logo {
