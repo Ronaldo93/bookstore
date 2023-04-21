@@ -867,16 +867,23 @@ transition: all 0.5s;
       }
        /* hidden when media reach 450px */
         @media screen and (max-width: 450px) {
-
+       
+        /* not fully optimized -> hidden */
         .hero {
             display: none;
         }
+       
+        .cta-redirect {
+          display: none;
         }
 
         .input:focus,.input:not(:placeholder-shown) {
           width: 150px;
         }
 
+        /* for the youtube iframe - not possible to do it without javascript */
+
         .logo h1 {
             font-size: 15px;
         }
+      }
