@@ -676,6 +676,7 @@ transition: all 0.5s;
 
     footer nav {
         display: flex;
+        flex-direction: row;
     }
 
     header nav {
@@ -843,4 +844,9 @@ transition: all 0.5s;
         .video {
             padding-left: 25px;
             /* display: block; */
+        }
+
+        /* stevejobs */
+        .book-description {
+            flex-direction: row;
         }
