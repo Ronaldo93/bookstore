@@ -1,0 +1,166 @@
+<!-- Acknowledgement:
+https://www.amazon.com/Tim_-Official-Biography-Avicii-Mosesson/dp/0751579017
+https://www.amazon.com/Leading-Learning-Years-Manchester-United/dp/0316268100/ref=sr_1_1?crid=1UQNI50A5XBBA&keywords=Sir+Alex+Ferguson&qid=1682061193&s=books&sprefix=sir+alex+ferguso%2Cstripbooks-intl-ship%2C316&sr=1-1&asin=0316268100&revisionId=&format=4&depth=1
+https://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537
+https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.goodreads.com%2Fbook%2Fshow%2F37570546-maybe-you-should-talk-to-someone&psig=AOvVaw3cEiDH81e28OmRusJ4n-8y&ust=1682148254134000&source=images&cd=vfe&ved=0CBMQjhxqFwoTCKDWodq4uv4CFQAAAAAdAAAAABAE
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.in%2FThat-Little-Voice-Your-Head%2Fdp%2F152906614X&psig=AOvVaw1KFIzIYsQ5XyeE3e6og8NL&ust=1682148417105000&source=images&cd=vfe&ved=0CBMQjhxqFwoTCMiygai5uv4CFQAAAAAdAAAAABAE
+https://www.google.com/url?sa=i&url=https%3A%2F%2Ftiki.vn%2Fsach-non-fiction-tieng-anh-sapiens-a-brief-history-of-humainkind-p183702836.html&psig=AOvVaw3x0IZV4z_InKzPsf1GyvW_&ust=1682153907065000&source=images&cd=vfe&ved=0CBMQjhxqFwoTCPCm3uHNuv4CFQAAAAAdAAAAABAE
+https://www.amazon.com/Science-Book-Ideas-Simply-Explained/dp/1465419659
+Fonts: https://fonts.google.com/specimen/Red+Hat+Display
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookstore</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head> 
+<body>
+  <header>
+     <!-- Mobile only - hamburger -->
+     <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+  
+      <ul class="menu__box">
+        <li><a class="menu__item" href="#">Home</a></li>
+        <li><a class="menu__item" href="#">Non-fiction</a></li>
+        <li><a class="menu__item" href="#">Reference</a></li>
+        <li><a class="menu__item" href="#">Contact us</a></li>
+        <li><a class="menu__item" href="#">Twitter</a></li>
+      </ul>
+    </div>
+    <div class="logo">
+      <img src="logo.jpg" alt="Bookstore logo">
+      <h1>Thame's Bookstore</h1>
+    </div>
+    <!-- searchbox on click  -->
+    <div class="input-container">
+      <input placeholder="Search something..." class="input" name="text" type="text">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <rect fill="white"></rect> <path d="M7.25007 2.38782C8.54878 2.0992 10.1243 2 12 2C13.8757 2 15.4512 2.0992 16.7499 2.38782C18.06 2.67897 19.1488 3.176 19.9864 4.01358C20.824 4.85116 21.321 5.94002 21.6122 7.25007C21.9008 8.54878 22 10.1243 22 12C22 13.8757 21.9008 15.4512 21.6122 16.7499C21.321 18.06 20.824 19.1488 19.9864 19.9864C19.1488 20.824 18.06 21.321 16.7499 21.6122C15.4512 21.9008 13.8757 22 12 22C10.1243 22 8.54878 21.9008 7.25007 21.6122C5.94002 21.321 4.85116 20.824 4.01358 19.9864C3.176 19.1488 2.67897 18.06 2.38782 16.7499C2.0992 15.4512 2 13.8757 2 12C2 10.1243 2.0992 8.54878 2.38782 7.25007C2.67897 5.94002 3.176 4.85116 4.01358 4.01358C4.85116 3.176 5.94002 2.67897 7.25007 2.38782ZM9 11.5C9 10.1193 10.1193 9 11.5 9C12.8807 9 14 10.1193 14 11.5C14 12.8807 12.8807 14 11.5 14C10.1193 14 9 12.8807 9 11.5ZM11.5 7C9.01472 7 7 9.01472 7 11.5C7 13.9853 9.01472 16 11.5 16C12.3805 16 13.202 15.7471 13.8957 15.31L15.2929 16.7071C15.6834 17.0976 16.3166 17.0976 16.7071 16.7071C17.0976 16.3166 17.0976 15.6834 16.7071 15.2929L15.31 13.8957C15.7471 13.202 16 12.3805 16 11.5C16 9.01472 13.9853 7 11.5 7Z" clip-rule="evenodd" fill-rule="evenodd"></path> </g></svg>
+    </div>
+    <!-- searchbox -->
+    <div class="searchbox">
+        <form class="form">
+            <button>
+                <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                    <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+            <input class="input" placeholder="Search for Author, Book..." required="" type="text">
+            <button class="reset" type="reset">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </form>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Non-fiction</a></li>
+        <li><a href="#">Reference</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="category1">    
+        <h1>Biography</h1>
+        <h3>Some of the best people has impact on the world</h3>
+        <div class="books">
+            <div class="book">
+            <img src="./nonfiction/book1.jpg" alt="Book 1">
+            <h3>The official biography of Avicii</h3>
+            <p>Mans Mosesson</p>
+            <!-- create a link with the arrow svg -->
+            <a href="#">Product detail &#8594;</a>
+            </div>
+            <div class="book">
+            <img src="./nonfiction/book2.jpg" alt="Book 2">
+            <h3>Leading</h3>
+            <p>Alex Ferguson & Michael Moritz</p>
+            <a href="#">Product detail &#8594;</a>
+            </div>
+            <div class="book">
+            <img src="./nonfiction/book3.jpg" alt="Book 3">
+            <h3>Steve Jobs</h3>
+            <p>Walter Isaacson</p>
+            <a href="#">Product detail &#8594;</a>
+            </div>
+        </div>
+    </section>
+    <section class="category2">
+      <h1>Self-help</h1>
+      <h3>Books that can change your life.</h3>
+      <div class="books">
+        <div class="book">
+          <img src="./nonfiction/book4.jpg" alt="Book 4">
+          <h3>Atomic Habits</h3>
+          <p>James Clear</p>
+          <a href="#">Product detail &#8594;</a>
+        </div>
+        <div class="book">
+          <img src="./nonfiction/book5.jpg" alt="Book 5">
+          <h3>Maybe you should talk to someone</h3>
+          <p>Lori Gottlieb</p>
+          <a href="#">Product detail &#8594;</a>
+        </div>
+        <div class="book">
+          <img src="./nonfiction/book6.jpg" alt="Book 6">
+          <h3>That Little Voice In Your Head</h3>
+          <p>Mo Gawdat</p>
+          <a href="#">Product detail &#8594;</a>
+        </div>
+      </div>
+    </section>
+    <section class="category3">
+      <h1>Science and Technology</h1>
+      <h3>Broaden your horizon by reading these books</h3>
+      <div class="books">
+        <div class="book">
+          <img src="./nonfiction/book7.jpg" alt="Book 7">
+          <h3>A Brief History of Time</h3>
+          <p>Stephen Hawking</p>
+          <a href="#">Product detail &#8594;</a>
+        </div>
+        <div class="book">
+          <img src="./nonfiction/book8.jpg" alt="Book 8">
+          <h3>Sapiens: A Brief History of Humankind</h3>
+          <p>Yuval Noah Harari</p>
+          <a href="#">Product detail &#8594;</a>
+        </div>
+        <div class="book">
+          <img src="./nonfiction/book9.jpg" alt="Book 9">
+          <h3>The Science Book</h3>
+          <p>DK</p>
+          <a href="#">Product detail &#8594;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="logo">
+      <img src="/logo.jpg" alt="Bookstore logo">
+      <h1>Bookstore</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Copyright</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
