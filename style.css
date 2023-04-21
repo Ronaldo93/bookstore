@@ -872,3 +872,11 @@ transition: all 0.5s;
             display: none;
         }
         }
+
+        .input:focus,.input:not(:placeholder-shown) {
+          width: 150px;
+        }
+
+        .logo h1 {
+            font-size: 15px;
+        }
