@@ -472,14 +472,12 @@ body h3 {
     align-items: center; */
 }
 
+/* div auto resized to fit container -> iframe auto shrink when the flexbox shrink */
 /* iframe center */
-.video iframe {
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%; */
-    /* margin-bottom: 50px; */
-
+.video-container {
+  display: flex;
+    /* height: 315px; */
+  /* width: 560px; */
 }
 /* 3. FOOTER ----------------------------------*/
 footer {
@@ -863,6 +861,13 @@ transition: all 0.5s;
         .book-carousel {
             display: flex;
             flex-direction: row;
+        }
+
+        .video-container {
+          display: flex;
+            /* height: 315px; */
+          /* width: 560px; */
+          padding-right: 25px;
         }
       }
        /* hidden when media reach 450px */
