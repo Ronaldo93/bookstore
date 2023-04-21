@@ -864,3 +864,11 @@ transition: all 0.5s;
             display: flex;
             flex-direction: row;
         }
+      }
+       /* hidden when media reach 450px */
+        @media screen and (max-width: 450px) {
+
+        .hero {
+            display: none;
+        }
+        }
