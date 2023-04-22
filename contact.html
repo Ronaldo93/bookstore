@@ -77,49 +77,76 @@ canva.com, postermywall.com, codepen.io,  dribbble.com
         </div>
     </section>
     <section class="form-contact">
-        <form action="">
-            <div class="form-group">
-                <label for="contact-purpose">Contact purpose</label>
-                <select name="purpose" id="purpose">
-                    <option value="sell">I want to sell books</option>
-                    <option value="buy">I want to buy books</option>
-                </select>
+      <form>
+      <div class="form-container">
+        <div class="form-group">
+          <label for="contact-purpose" class="form-label">Contact Purpose</label>
+          <div class="input-div">
+            <!-- multiple selection -->
+            <select name="contact-purpose" id="contact-purpose" class="form-input">
+              <option value="general">General</option>
+              <option value="feedback">Feedback</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="name" class="form-label">Name:</label>
+          <div class="input-div">
+            <input type="name" id="name" name="name" class="form-input">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email:</label>
+          <div class="input-div">
+            <input type="email" id="email" name="email" class="form-input">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="phone" class="form-label">Phone:</label>
+          <div class="input-div">
+            <input type="phone" id="phone" name="phone" class="form-input">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contact-purpose" class="form-label">Contact preference</label>
+          <div class="input-div">
+            <!-- checkboxes -->
+            <!-- <div class="checkboxes"> -->
+              <div class="checkbox">
+                <input type="checkbox" id="by-email" name="by-email" value="by-email">
+                <label for="by-email">By email</label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="phone" name="phone" value="phone">
+                <label for="phone">By Phone</label>
+              </div>
+              </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="weekly-newsletter" class="form-label">Receive weekly newsletter:</label>
+          <div class="input-div">
+            <!-- radio button -->
+            <!-- <div class="radio-buttons"> -->
+              <div class="radio">
+                <input type="radio" id="yes" name="weekly-newsletter" value="yes">
+                <label for="yes">Yes</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="no" name="weekly-newsletter" value="no">
+                <label for="no">No</label>
+              </div>
             </div>
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="name" name="name" id="name" placeholder="Enter your name">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter your email">
-            <div class="form-group">
-                <label for="phone">Phone</label>
-                <input type="phone" name="phone" id="phone" placeholder="Enter your phone number">
-            </div>
-            <div class="form-group">
-                <label for="preference">Contact preference</label>
-                <!-- checkbox -->
-                <div class="checkbox">
-                    <input type="checkbox" name="email" id="email">
-                    <label for="preference">Email</label>
-                    <input type="checkbox" name="phone" id="phone">
-                    <label for="preference">Phone</label>
-            </div>
-            <div class="form-group">
-                <label for="newsletter">Receive weekly newsletter</label>
-                <!-- radio choice -->
-                <div class="radio">
-                    <input type="radio" name="news_yes" id="news_yes" checked="checked">
-                    <label for="newsletter">Yes</label>
-                    <input type="radio" name="news_no" id="news_no">
-                    <label for="newsletter">No</label>
-            </div>
-            <div class="form-group">
-                <label for="message">Extra Notes:</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder=""></textarea>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">    
-        </form>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="extra-note" class="form-label">Extra Note:</label>
+          <div class="input-div">
+            <textarea name="extra-note" id="extra-note" cols="30" rows="10" class="form-input"></textarea>
+          </div>
+        </div>
+      </div>
+    </form>
     </section>
   </main>
   <footer>

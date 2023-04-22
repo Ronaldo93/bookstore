@@ -588,12 +588,13 @@ transition: all 0.5s;
 }
 
 /* COntact-us  page------------------------------*/
+/* contact us */
 .contact-us {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  /* justify-content: center; */
   width: auto;
-  padding: 15px;
+  /* padding: 15px; */
   padding-bottom: 2px;
   padding-top: 2px;
   border-radius: 10px;
@@ -602,30 +603,53 @@ transition: all 0.5s;
   margin-top: 50px;
 }
 
+/* the form */
 .form-contact {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-
-  border-radius: 20px;
+  padding: 50px;
 }
 
 .form-group {
   display: flex;
-  flex-direction: column;
-  /* justify-content: space-around; */
-  /* align-items: flex-start; */
-  margin-top: 15px;
-  margin-bottom: 15px;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
 }
 
-.form-group input {
-  margin-top: 5px;
+.form-label {
+  white-space: nowrap;
+  margin-right: 10px;
+  width: 250px; /* Set a fixed width for the labels */
 }
 
+.input-div {
+  flex-grow: 1;
+  padding-left: 10px;
+  display: flex;
+}
+
+.form-input {
+  width: 100%;
+  max-width: 300px;
+  align-self: flex-end;/* Set a fixed width for the input boxes */
+  /* margin-left: 300px; */
+}
+
+
+
+/* form input */
+.form-contact {
+  width: 100%;
+}
+
+/* .form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+} */
+
+label {
+  margin-right: 1rem;
+}
 
 /* additional media query---------------------- */
 @media screen and (max-width: 960px) {
@@ -877,6 +901,28 @@ transition: all 0.5s;
             /* height: 315px; */
           /* width: 560px; */
           padding-right: 25px;
+        }
+
+        /* vertical form */
+        .form-group {
+          display: flex;
+          flex-direction: column;
+          /* justify-content: space-around; */
+          /* align-items: flex-start; */
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+
+        .contact-us {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .form-group {
+          flex-direction: column;
+          align-items: center;
+
         }
       }
        /* hidden when media reach 450px */
