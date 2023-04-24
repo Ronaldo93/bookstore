@@ -273,8 +273,9 @@ body h3 {
     justify-content: center;
     align-items: flex-start;
     border-radius: 10px;
+    border: 1px solid black;
     /* add some shader */
-    box-shadow: 10px 10px 30px #c0c0c0, -10px -10px 30px #ffffff;
+    /* box-shadow: 10px 10px 30px #c0c0c0, -10px -10px 30px #ffffff; */
     /* padding */
     padding: 150px;
     padding-left: 50px  ;
